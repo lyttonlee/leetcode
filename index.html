@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .infobox {
+        position: absolute;
+        left: 55px;
+        top: 30px;
+      }
+    .box-arrow {
+        width: 10px;
+        height: 10px;
+        background: rebeccapurple;
+        margin: 0 auto;
+        transform: rotate(45deg);
+        position: relative;
+        top: -5px;
+      }
+    .box-info {
+      width: 180px;
+      background: rebeccapurple;
+      border-radius: 8px;
+      padding: 8px;
+    }
+    .parent {
+      background: rosybrown;
+      width: 300px;
+      height: 300px;
+    }
+    .dom {
+      height: 150px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="dom">
+      <div>1111111111</div>
+      <div v-if="showInfobox && showIndex === index" class="infobox">
+        <div class="box-info">
+          <div class="start">开始时间: {{parseData(subLog.param).start}}</div>
+          <div class="end">结束时间: {{parseData(subLog.param).end}}</div>
+        </div>
+        <div class="box-arrow"></div>
+      </div>
+    </div>
+    
+    <div class="dom">
+      <div>222222222222222</div>
+      <div v-if="showInfobox && showIndex === index" class="infobox">
+        <div class="box-info">
+          <div class="start">开始时间: {{parseData(subLog.param).start}}</div>
+          <div class="end">结束时间: {{parseData(subLog.param).end}}</div>
+        </div>
+        <div class="box-arrow"></div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
