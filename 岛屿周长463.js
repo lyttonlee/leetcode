@@ -2,6 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
+// 深度优化
 var islandPerimeter = function(grid) {
   let perimeter = 0
   for (let row = 0; row < grid.length; row++) {
