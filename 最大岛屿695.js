@@ -20,12 +20,12 @@ var maxAreaOfIsland = function(grid) {
           grid[row][col] = 0
           // area++
           curArea++
-          console.log(curArea)
+        //   console.log(curArea)
           curArea = dfs(row-1, col, curArea)
           curArea = dfs(row+1, col, curArea)
           curArea = dfs(row, col-1, curArea)
           curArea = dfs(row, col+1, curArea)
-          console.log(curArea)
+        //   console.log(curArea)
       }
       return curArea
   }
